@@ -1,8 +1,13 @@
-Feature: Naveen Labs front Page
+Feature: UI Cogmento front Page
 
-Scenario: Naveen Labs front Page Scenario
+Scenario Outline: Cogmento Login page
+Given User is already on login page
+When title of login page is Cogmento CRM
+Then user enters "<username>" and "<password>"
+Then User clicks on Login
+Then Close the browser
 
-Given User is already on front Page
-When title of front page is Your Store
-Then User clicks My Account and Login button
-And User is on Login Page
+Examples: 
+
+|username||password|
+| sumitgoel1001@gmail.com | |Sumit@1234|

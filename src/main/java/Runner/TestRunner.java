@@ -9,8 +9,9 @@ import cucumber.api.junit.Cucumber;
 
 
 @CucumberOptions(
-		features="C:\\Users\\hp\\eclipse-workspace\\BDDAutomation\\src\\main\\java\\features"
-		,glue= {"stepDefinations"}
+		features="C:\\Users\\hp\\eclipse-workspace\\BDDAutomation\\src\\main\\java\\features\\login.feature"
+		,glue= {"stepDefinations"},
+		dryRun=false
 		
 		
 		)
